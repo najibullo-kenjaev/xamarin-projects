@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:vm="clr-namespace:UIDesing"
+             x:Class="UIDesing.MainPage">
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout>
+        <Label Text="Discover" TextColor="Black"  FontAttributes="Bold" FontSize="24" Margin="15"/>
+
+        <CarouselView ItemsSource="{Binding places}" PeekAreaInsets="100">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Frame HeightRequest="280" WidthRequest="180"
+               BackgroundColor="White" Padding="0"
+               CornerRadius="10"
+               HasShadow="True" Margin="10"
+               HorizontalOptions="CenterAndExpand" >
+                            <Grid>
+                                <StackLayout BackgroundColor="Black">
+                                    <Image Source="{Binding ImgSource}"
+                       HeightRequest="350"
+                       Opacity="0.8"
+                       Aspect="AspectFill"/>
+                                </StackLayout>
+                                <StackLayout Margin="0,0,0,10">
+                                    <Image Source="https://www.clipartmax.com/png/full/174-1749142_instagram-bookmark-icon-transparent-png-bookmark.png"
+                       HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="10,5,10,0" 
+                       Aspect="AspectFill"/>
+                                    <Label  Text="{Binding Title}"
+                            TextColor="White"
+                            FontSize="18" 
+                            FontAttributes="None" 
+                            Margin="10,5,0,0"
+                            VerticalOptions="EndAndExpand"/>
+                                    <StackLayout Orientation="Horizontal" Margin="0,0,5,0">
+                                        <Image Source="https://i.pinimg.com/originals/0f/61/ba/0f61ba72e0e12ba59d30a50295964871.png"
+                       HeightRequest="20" Margin="-5,0"
+                       Opacity="0.8"
+                       Aspect="AspectFill"/>
+                                        <Label Text="{Binding Country}" TextColor="White" FontSize="14" FontAttributes="None" 
+                               VerticalOptions="EndAndExpand"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Grid>
+                        </Frame>
+                       
+                    </StackLayout>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+        <StackLayout Margin="10" Padding="5">
+            <Button Text="ok" WidthRequest="100" HeightRequest="50" CornerRadius="10" BackgroundColor="DarkBlue" TextColor="White"/>
+            <Button Text="ok" WidthRequest="100" HeightRequest="50" CornerRadius="10" BackgroundColor="LightBlue" TextColor="White"/>
+                <Button Text="ok" WidthRequest="100" HeightRequest="50" CornerRadius="10" BackgroundColor="YellowGreen" TextColor="White"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
