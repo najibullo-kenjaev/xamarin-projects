@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:vm="clr-namespace:UIDesing"
              x:Class="UIDesing.MainPage">
     <ContentPage.BindingContext>
@@ -9,39 +9,40 @@
     <StackLayout>
         <Label Text="Discover" TextColor="Black"  FontAttributes="Bold" FontSize="24" Margin="15"/>
 
-        <CarouselView ItemsSource="{Binding places}" PeekAreaInsets="100">
+        <CarouselView ItemsSource="{Binding places}" HeightRequest="300" PeekAreaInsets="100">
             <CarouselView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout>
                         <Frame HeightRequest="280" WidthRequest="180"
-               BackgroundColor="White" Padding="0"
-               CornerRadius="10"
-               HasShadow="True" Margin="10"
-               HorizontalOptions="CenterAndExpand" >
+                            BackgroundColor="White" Padding="0"
+                            CornerRadius="10"
+                            HasShadow="True" Margin="10"
+                            HorizontalOptions="CenterAndExpand" >
                             <Grid>
                                 <StackLayout BackgroundColor="Black">
                                     <Image Source="{Binding ImgSource}"
-                       HeightRequest="350"
-                       Opacity="0.8"
-                       Aspect="AspectFill"/>
+                                            HeightRequest="350"
+                                            Opacity="0.8"
+                                            Aspect="AspectFill"/>
                                 </StackLayout>
                                 <StackLayout Margin="0,0,0,10">
                                     <Image Source="https://www.clipartmax.com/png/full/174-1749142_instagram-bookmark-icon-transparent-png-bookmark.png"
-                       HeightRequest="40" HorizontalOptions="EndAndExpand" Margin="10,5,10,0" 
-                       Aspect="AspectFill"/>
+                                            HeightRequest="30" HorizontalOptions="EndAndExpand" Margin="10,5,10,0" 
+                                            Aspect="AspectFill"/>
                                     <Label  Text="{Binding Title}"
-                            TextColor="White"
-                            FontSize="18" 
-                            FontAttributes="None" 
-                            Margin="10,5,0,0"
-                            VerticalOptions="EndAndExpand"/>
-                                    <StackLayout Orientation="Horizontal" Margin="0,0,5,0">
+                                            TextColor="White"
+                                            FontSize="16" 
+                                            FontAttributes="None" 
+                                            Margin="10,0,0,0"
+                                            VerticalOptions="EndAndExpand"/>
+                                    <StackLayout Orientation="Horizontal" Margin="0,0,0,0">
                                         <Image Source="https://i.pinimg.com/originals/0f/61/ba/0f61ba72e0e12ba59d30a50295964871.png"
-                       HeightRequest="20" Margin="-5,0"
-                       Opacity="0.8"
-                       Aspect="AspectFill"/>
+                                               HeightRequest="20"
+                                               Opacity="0.8"
+                                               Aspect="AspectFill"
+                                               Margin="5,0,0,0"/>
                                         <Label Text="{Binding Country}" TextColor="White" FontSize="14" FontAttributes="None" 
-                               VerticalOptions="EndAndExpand"/>
+                                                VerticalOptions="EndAndExpand" Margin="-8,0,0,0"/>
                                     </StackLayout>
                                 </StackLayout>
                             </Grid>
@@ -51,10 +52,29 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
-        <StackLayout Margin="10" Padding="5">
-            <Button Text="ok" WidthRequest="100" HeightRequest="50" CornerRadius="10" BackgroundColor="DarkBlue" TextColor="White"/>
-            <Button Text="ok" WidthRequest="100" HeightRequest="50" CornerRadius="10" BackgroundColor="LightBlue" TextColor="White"/>
-                <Button Text="ok" WidthRequest="100" HeightRequest="50" CornerRadius="10" BackgroundColor="YellowGreen" TextColor="White"/>
+
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Feeling adventurous" TextColor="Black" FontSize="24" FontAttributes="Bold" Margin="15" />
+            <Label HorizontalOptions="EndAndExpand" Text="Show All" TextColor="Gray" FontSize="18" VerticalTextAlignment="Center" FontAttributes="None" Margin="15"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+            <StackLayout Margin="5" WidthRequest="80">
+                <ImageButton HorizontalOptions="Center" Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50"/>
+                <Label HorizontalOptions="Center" Text="Kayak" TextColor="Gray" FontSize="18"  FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+            </StackLayout>
+            <StackLayout Margin="5" WidthRequest="80">
+                <ImageButton HorizontalOptions="Center" Source="https://www.pngkey.com/png/full/14-142896_this-free-icons-png-design-of-hot-air.png" HeightRequest="50"/>
+                <Label HorizontalOptions="Center" Text="Balon" TextColor="Gray" FontSize="18"  FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+            </StackLayout>
+            <StackLayout Margin="5" WidthRequest="80">
+                <ImageButton HorizontalOptions="Center" Source="https://www.vhv.rs/dpng/d/332-3321934_computer-icons-backpacking-hiking-trekking-icon-png-transparent.png" HeightRequest="50"/>
+                <Label HorizontalOptions="Center" Text="Hiking" TextColor="Gray" FontSize="18"  FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+            </StackLayout>
+            <StackLayout Margin="5" WidthRequest="80">
+                <ImageButton HorizontalOptions="Center" Source="https://www.freeiconspng.com/thumbs/running-icon/sports-running-icon-19.jpg" HeightRequest="50"/>
+                <Label HorizontalOptions="Center" Text="Runnig" TextColor="Gray" FontSize="18"  FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
+            </StackLayout>
         </StackLayout>
     </StackLayout>
 

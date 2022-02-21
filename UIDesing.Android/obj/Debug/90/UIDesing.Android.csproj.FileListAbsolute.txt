@@ -490,3 +490,6 @@ C:\Users\najibullo\source\repos\UIDesing\UIDesing.Android\obj\Debug\90\stamp\_Co
 C:\Users\najibullo\source\repos\UIDesing\UIDesing.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\najibullo\source\repos\UIDesing\UIDesing.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\najibullo\source\repos\UIDesing\UIDesing.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\90\MonoAndroid,Version=v9.0.AssemblyAttributes.cs
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\90\build.props
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\90\adb.props
