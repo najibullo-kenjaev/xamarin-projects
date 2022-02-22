@@ -60,7 +60,7 @@
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
             <StackLayout Margin="5" WidthRequest="80">
-                <ImageButton HorizontalOptions="Center" Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50"/>
+                <ImageButton HorizontalOptions="Center" Source="https://www.clipartmax.com/png/middle/194-1949066_canoe-free-icon-kayak-icon.png" HeightRequest="50" Clicked="ImageButton_Clicked"/>
                 <Label HorizontalOptions="Center" Text="Kayak" TextColor="Gray" FontSize="18"  FontAttributes="None" VerticalTextAlignment="Center" Margin="10"/>
             </StackLayout>
             <StackLayout Margin="5" WidthRequest="80">

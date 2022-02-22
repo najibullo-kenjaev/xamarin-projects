@@ -656,3 +656,7 @@ C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\
 C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\res\drawable\time.png
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\res\drawable\price.png
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\res\drawable\airplane.png
+C:\Users\najibullo\source\repos\xamarin-projects\UIDesing.Android\obj\Debug\100\res\drawable\cruise.png
